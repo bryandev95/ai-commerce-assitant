@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* (optional) project theme tokens */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, "Inter", sans-serif;
+  --radius-card: 1rem;
+
+  /* brand colors (examples) */
+  --color-brand-50:  oklch(0.98 0.01 250);
+  --color-brand-500: oklch(0.65 0.12 250);
+  --color-brand-700: oklch(0.52 0.12 250);
+}
+
+/* your utilities */
+:root { color-scheme: light; }
+body { @apply bg-neutral-50 text-neutral-900 font-[var(--font-sans)]; }
+.card { @apply bg-white rounded-[var(--radius-card)] shadow border border-neutral-100; }
+.btn  { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium bg-neutral-900 text-white hover:bg-neutral-800; }
+.input{ @apply w-full rounded-xl border border-neutral-200 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-neutral-900/10; }
+.dark body { @apply bg-neutral-900 text-neutral-100; }
+.dark .card { @apply bg-neutral-800 border-neutral-700; }
+.dark .btn  { @apply bg-neutral-100 text-neutral-900 hover:bg-white; }
