@@ -1,7 +1,6 @@
 # AI Commerce Assistant
 Next.js + TypeScript demo showcasing **AI chat**, **semantic search (embeddings + vector similarity)**, and **contextual cart recommendations**.
 
-**Live demo**: (add your Vercel URL)  
 **Tech**: Next.js, React, TypeScript, OpenAI, minimal vector store, Zod, Jest.
 
 ## Quick start
